@@ -51,6 +51,14 @@
   }
 
   a{color:var(--accent-blue);}
+  .card a, .contact-grid a{
+    text-decoration:none;
+    border-bottom:1px solid rgba(46,85,144,0.35);
+    transition:border-color .15s ease;
+  }
+  .card a:hover{border-color:var(--accent-blue);}
+  .contact-grid a{border-bottom-color:rgba(243,241,233,0.35);}
+  .contact-grid a:hover{border-bottom-color:var(--accent-brass);}
 
   .wrap{
     max-width:var(--maxw);
@@ -605,10 +613,10 @@
     <div class="nav-mark">RAVI<span>·</span>VANGALA</div>
     <nav class="nav-links">
       <a href="#profile">Profile</a>
+      <a href="#credentials">Credentials</a>
       <a href="#competencies">Leadership</a>
       <a href="#skills">Technical</a>
       <a href="#experience">Experience</a>
-      <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -685,6 +693,36 @@
     </div>
     <p class="lede">I've spent most of my career inside healthcare and life-sciences technology — twenty of those years based in the United States, with additional engagements across the Middle East and Europe, before returning to Hyderabad. Along the way I've moved from hands-on EDI and integration development into enterprise architecture, and more recently into leading Generative and Agentic AI initiatives, including a provisional U.S. patent for a healthcare rating system built on agentic AI.</p>
     <p class="lede" style="margin-top:16px;">What hasn't changed is the role I keep ending up in: the bridge between business executives, the EA practice, and the engineering teams actually shipping the work. I'm looking for a long-term Senior Director, VP, or CTO role — ideally in an IT product, healthcare, or pharmaceutical organization — where that bridge, and a leader willing to stay technically fluent, is genuinely valued.</p>
+  </div>
+</section>
+
+<section id="credentials" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Credentials &amp; IP</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="cards-2">
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li><a href="https://www.credly.com/badges/9163b765-b91f-4dd8-871f-e973121fddf3/" target="_blank" rel="noopener">TOGAF ↗</a></li>
+          <li>Multiple AWS &amp; Google Cloud trainings</li>
+          <li>Go Language, Terraform &amp; UiPath RPA certifications</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Patents &amp; Publications</h3>
+        <ul>
+          <li><span class="tag-patent">Patent Awarded</span>Provisional U.S. patent — Health Care Rating Improvement System using Generative &amp; Agentic AI</li>
+          <li><span class="tag-patent">In Progress</span>Patent application — Concierto Modernize application, Trianz</li>
+          <li>Article: <a href="https://aws.amazon.com/blogs/apn/demystifying-natural-language-processing-and-machine-learning-with-amazon-comprehend/" target="_blank" rel="noopener">Demystifying Natural Language Processing and Machine Learning with AWS Comprehend ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/designing-training-custom-llms-ravi-vangala-zgrhf/" target="_blank" rel="noopener">Designing and Training Custom LLMs ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/discovering-world-large-language-models-ravi-vangala-yxopf/" target="_blank" rel="noopener">Discovering the World of Large Language Models ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/designing-guardrail-glm-52-architecture-llm-steering-concepts-ravi-sp9yf/" target="_blank" rel="noopener">Designing a Custom LLM Guardrail Layer Using LLM Steering Concepts ↗</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -796,7 +834,7 @@
       <h2>Career Timeline</h2>
       <div class="rule-x"></div>
     </div>
-    <p class="lede" style="margin-bottom:36px;">Twenty-six years across nine U.S. states, the Middle East, and India.</p>
+    <p class="lede" style="margin-bottom:36px;">Twenty-six years across nine U.S. states, the Middle East, and India — presented here as the pipeline it was: each role feeding capability into the next.</p>
 
     <div class="timeline">
 
@@ -996,36 +1034,6 @@
   </div>
 </section>
 
-<section id="credentials" class="bordered reveal">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Credentials &amp; IP</h2>
-      <div class="rule-x"></div>
-    </div>
-    <div class="cards-2">
-      <div class="card">
-        <h3>Certifications</h3>
-        <ul>
-          <li>TOGAF</li>
-          <li>Multiple AWS &amp; Google Cloud trainings</li>
-          <li>Go Language, Terraform &amp; UiPath RPA certifications</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Patents &amp; Publications</h3>
-        <ul>
-          <li><span class="tag-patent">Patent Awarded</span>Provisional U.S. patent — Health Care Rating Improvement System using Generative &amp; Agentic AI</li>
-          <li><span class="tag-patent">In Progress</span>Patent application — Concierto Modernize application, Trianz</li>
-          <li>Article: Demystifying Natural Language Processing and Machine Learning with AWS Comprehend</li>
-          <li>Article: Designing and Training Custom LLMs</li>
-          <li>Article: Discovering the World of Large Language Models</li>
-          <li>Article: Designing a Custom LLM Guardrail Layer Using LLM Steering Concepts</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="reveal">
   <div class="wrap">
     <div class="section-head">
@@ -1059,7 +1067,7 @@
       </div>
       <div class="cell">
         <span class="label">LinkedIn</span>
-        <span class="val">Ravi Vangala</span>
+        <span class="val"><a href="https://www.linkedin.com/in/ravi-vangala/" target="_blank" rel="noopener">Ravi Vangala ↗</a></span>
       </div>
       <div class="cell">
         <span class="label">Location</span>
@@ -1074,7 +1082,7 @@
 
     <div class="fine-print">
       <span>© 2026 Ravi Prasad Vangala</span>
-      <span>ravipvangala.github.io</span>
+      <span>Built for GitHub Pages · ravipvangala.github.io</span>
     </div>
   </div>
 </footer>
