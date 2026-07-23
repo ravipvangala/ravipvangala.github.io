@@ -625,7 +625,7 @@
     <p class="hero-copy">Twenty-six years spent turning enterprise technology into business outcomes — from HIPAA EDI integration and Kafka event architectures to Generative and Agentic AI. I've led delivery from the data center to the boardroom, and I'm still hands-on enough to argue about the architecture diagram.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="Ravi_Vangala_Resume.pdf" download>Download Résumé</a>
-      <a class="btn btn-ghost" href="mailto:ravipvangala@gmail.com">Email Me</a>
+      <a class="btn btn-ghost" href="mailto:ravipvangala@gmail.com" onclick="copyEmail(this)">Email Me</a>
       <a class="btn btn-ghost" href="tel:+919392742499">+91 93927 42499</a>
     </div>
 
@@ -796,7 +796,7 @@
       <h2>Career Timeline</h2>
       <div class="rule-x"></div>
     </div>
-    <p class="lede" style="margin-bottom:36px;">Twenty-six years across nine U.S. states, the Middle East, and India</p>
+    <p class="lede" style="margin-bottom:36px;">Twenty-six years across nine U.S. states, the Middle East, and India.</p>
 
     <div class="timeline">
 
@@ -1069,7 +1069,7 @@
 
     <div class="foot-actions">
       <a class="btn btn-primary" href="Ravi_Vangala_Resume.pdf" download>Download Full Résumé</a>
-      <a class="btn btn-ghost" href="mailto:ravipvangala@gmail.com">Send an Email</a>
+      <a class="btn btn-ghost" href="mailto:ravipvangala@gmail.com" onclick="copyEmail(this)">Send an Email</a>
     </div>
 
     <div class="fine-print">
@@ -1080,6 +1080,19 @@
 </footer>
 
 <script>
+  // Copy email to clipboard as a fallback for visitors with no default mail app configured.
+  // The mailto: link still fires normally if one is set up — this just adds a safety net.
+  function copyEmail(el){
+    const email = 'ravipvangala@gmail.com';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(() => {
+        const original = el.textContent;
+        el.textContent = 'Copied — ' + email;
+        setTimeout(() => { el.textContent = original; }, 2200);
+      }).catch(() => {});
+    }
+  }
+
   // Gentle reveal-on-scroll for sections
   if ('IntersectionObserver' in window) {
     const items = document.querySelectorAll('.reveal');
