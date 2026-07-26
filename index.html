@@ -443,40 +443,67 @@
   .grid-2{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:36px 48px;
+    gap:28px;
     margin-top:8px;
+  }
+  .group{
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #EAE3D9;
+    border-left: 4px solid #6366F1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .group:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   }
   .group h3{
     font-size:0.95rem;
     font-family:'IBM Plex Mono', monospace;
     text-transform:uppercase;
     letter-spacing:0.08em;
-    font-weight:600;
-    color:var(--ink);
-    margin-bottom:14px;
-    padding-bottom:10px;
-    border-bottom:1px solid var(--line);
+    font-weight:700;
+    color:#1E1B4B;
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid rgba(99, 102, 241, 0.15);
   }
   .chips{
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
+    gap:10px;
   }
   .chip{
     font-size:0.85rem;
-    font-weight:500;
-    padding:7px 13px;
-    border:1px solid var(--line-strong);
-    border-radius:var(--radius);
-    color:var(--ink);
-    background:var(--surface);
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:20px;
+    color:#312E81;
+    background:linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+    border:1px solid #C7D2FE;
+    box-shadow:0 1px 2px rgba(0,0,0,0.03);
+    transition:all 0.15s ease;
+  }
+  .chip:hover{
+    background:linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+    color:#FFFFFF;
+    border-color:#4338CA;
+    transform:scale(1.03);
   }
   .chip.tech{
     font-family:'IBM Plex Mono', monospace;
-    font-size:0.76rem;
-    border-color:rgba(13,148,136,0.3);
-    color:var(--accent-teal);
-    background:rgba(13,148,136,0.06);
+    font-size:0.78rem;
+    color:#065F46;
+    background:linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+    border:1px solid #A7F3D0;
+  }
+  .chip.tech:hover{
+    background:linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color:#FFFFFF;
+    border-color:#047857;
+    transform:scale(1.03);
   }
 
   /* ---------- TIMELINE ---------- */
@@ -1047,8 +1074,8 @@
       <div class="rule-x"></div>
     </div>
     <div class="grid-2">
-      <div class="group">
-        <h3>Generative &amp; Agentic AI</h3>
+      <div class="group" style="border-left-color: #10B981;">
+        <h3 style="color: #064E3B; border-bottom-color: rgba(16, 185, 129, 0.2);">Generative &amp; Agentic AI</h3>
         <div class="chips">
           <span class="chip tech">RAG</span>
           <span class="chip tech">LLM Fine-Tuning</span>
@@ -1057,8 +1084,8 @@
           <span class="chip tech">Machine Learning</span>
         </div>
       </div>
-      <div class="group">
-        <h3>Cloud &amp; Infrastructure</h3>
+      <div class="group" style="border-left-color: #10B981;">
+        <h3 style="color: #064E3B; border-bottom-color: rgba(16, 185, 129, 0.2);">Cloud &amp; Infrastructure</h3>
         <div class="chips">
           <span class="chip tech">AWS</span>
           <span class="chip tech">Azure</span>
@@ -1067,8 +1094,8 @@
           <span class="chip tech">Terraform</span>
         </div>
       </div>
-      <div class="group">
-        <h3>Data Engineering</h3>
+      <div class="group" style="border-left-color: #10B981;">
+        <h3 style="color: #064E3B; border-bottom-color: rgba(16, 185, 129, 0.2);">Data Engineering</h3>
         <div class="chips">
           <span class="chip tech">Snowflake</span>
           <span class="chip tech">Kafka</span>
@@ -1079,8 +1106,8 @@
           <span class="chip tech">SQL / NoSQL</span>
         </div>
       </div>
-      <div class="group">
-        <h3>Integration &amp; Platforms</h3>
+      <div class="group" style="border-left-color: #10B981;">
+        <h3 style="color: #064E3B; border-bottom-color: rgba(16, 185, 129, 0.2);">Integration &amp; Platforms</h3>
         <div class="chips">
           <span class="chip tech">WebSphere Message Broker</span>
           <span class="chip tech">Edifecs</span>
