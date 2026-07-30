@@ -109,8 +109,20 @@
     color:var(--ink);
     letter-spacing:0.02em;
     white-space:nowrap;
+    text-decoration:none;
+    transition:opacity .15s ease;
+  }
+  .nav-mark:hover{
+    opacity:0.8;
   }
   .nav-mark span{color:var(--accent-brass);}
+  
+  .nav-right{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    overflow:hidden;
+  }
   .nav-links{
     display:flex;
     align-items:center;
@@ -136,6 +148,48 @@
     color:var(--accent-teal);
     border-bottom-color:var(--accent-teal);
     border-bottom-width:3px;
+  }
+
+  .nav-cta-group{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border-left:1px solid var(--line-strong);
+    padding-left:16px;
+  }
+  .nav-btn-resume{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#ffffff;
+    background:var(--accent-brass);
+    padding:6px 12px;
+    border-radius:4px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background .15s ease;
+  }
+  .nav-btn-resume:hover{
+    background:var(--accent-brass-deep);
+  }
+  .nav-icon-email{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:32px;
+    height:32px;
+    color:var(--ink);
+    border:1px solid var(--line-strong);
+    border-radius:4px;
+    background:var(--surface);
+    text-decoration:none;
+    transition:all .15s ease;
+  }
+  .nav-icon-email:hover{
+    color:var(--accent-blue);
+    border-color:var(--accent-blue);
   }
 
   /* ---------- HERO ---------- */
@@ -191,8 +245,8 @@
     font-style:italic;
     font-weight:600;
     color:var(--ink);
-    background:linear-gradient(transparent 62%, rgba(217,119,6,0.15) 62%);
-    padding:0 2px;
+    background:none;
+    padding:0;
   }
   .hero-grid{
     display:grid;
@@ -826,20 +880,31 @@
   }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header class="site-nav">
   <div class="nav-inner">
-    <div class="nav-mark">RAVI<span>·</span>VANGALA</div>
-    <nav class="nav-links">
-      <a href="#profile">Profile</a>
-      <a href="#delivery">Delivery</a>
-      <a href="#credentials">Credentials</a>
-      <a href="#competencies">Leadership</a>
-      <a href="#skills">Technical</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a href="#top" class="nav-mark" aria-label="Go to top of page">RAVI<span>·</span>VANGALA</a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#profile">Profile</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#competencies">Leadership</a>
+        <a href="#skills">Technical</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta-group">
+        <a href="Ravi_Vangala_Resume.pdf" class="nav-btn-resume" download>Résumé</a>
+        <a href="mailto:ravipvangala@gmail.com" class="nav-icon-email" title="Send an Email" aria-label="Send an Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 
