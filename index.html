@@ -110,10 +110,13 @@
     letter-spacing:0.02em;
     white-space:nowrap;
     text-decoration:none;
-    transition:opacity .15s ease;
+    padding:6px 4px;
+    border-bottom:3px solid rgba(13, 148, 136, 0.35);
+    transition:all .15s ease;
   }
   .nav-mark:hover{
-    opacity:0.8;
+    color:var(--accent-teal);
+    border-bottom-color:var(--accent-teal);
   }
   .nav-mark span{color:var(--accent-brass);}
   
@@ -164,7 +167,7 @@
     text-transform:uppercase;
     letter-spacing:0.06em;
     color:#ffffff;
-    background:var(--accent-brass);
+    background:var(--accent-teal);
     padding:6px 12px;
     border-radius:4px;
     text-decoration:none;
@@ -172,7 +175,7 @@
     transition:background .15s ease;
   }
   .nav-btn-resume:hover{
-    background:var(--accent-brass-deep);
+    background:#0f766e;
   }
   .nav-icon-email{
     display:inline-flex;
