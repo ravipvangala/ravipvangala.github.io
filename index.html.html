@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi P Vangala — Technology Executive</title>
+<meta name="description" content="Ravi P Vangala — 26+ years in Generative &amp; Agentic AI, Enterprise Architecture and Digital Transformation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Spectral:wght@400;500;600;700&family=Libre+Caslon+Text:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Warm Light Palette */
+    --ink:#0f172a;
+    --body-text:#334155;
+    --paper:#f8fafc;
+    --surface:#ffffff;
+    --line:#e2e8f0;
+    --line-strong:#cbd5e1;
+    --muted:#64748b;
+    --accent-brass:#d97706;
+    --accent-brass-deep:#b45309;
+    --accent-blue:#0284c7;
+    --accent-blue-soft:#0369a1;
+    --accent-teal:#0d9488;
+    --radius:8px;
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--body-text);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    color:var(--ink);
+    margin:0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+
+  a{color:var(--accent-blue);}
+  .card a, .contact-grid a{
+    text-decoration:none;
+    border-bottom:1px solid rgba(2,132,199,0.3);
+    transition:border-color .15s ease;
+  }
+  .card a:hover{border-color:var(--accent-blue);}
+  .contact-grid a{border-bottom-color:rgba(15,23,42,0.25);}
+  .contact-grid a:hover{border-bottom-color:var(--accent-teal);}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 clamp(20px,5vw,32px);
+  }
+
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    font-size:0.75rem;
+    font-weight:600;
+    color:var(--accent-teal);
+  }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(248,250,252,0.92);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 1px 3px rgba(0,0,0,0.05);
+  }
+  .nav-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    height:64px;
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 clamp(20px,5vw,32px);
+  }
+  .nav-mark{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--ink);
+    letter-spacing:0.02em;
+    white-space:nowrap;
+  }
+  .nav-mark span{color:var(--accent-brass);}
+  .nav-links{
+    display:flex;
+    gap:clamp(14px,2.4vw,28px);
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--muted);
+    text-decoration:none;
+    white-space:nowrap;
+    padding:4px 0;
+    border-bottom:2px solid transparent;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .nav-links a:hover{color:var(--ink); border-color:var(--accent-brass);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:clamp(56px,9vw,96px) 0 clamp(40px,6vw,64px);
+    border-bottom:1px solid var(--line);
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(217,119,6,0.035) 0 1px, transparent 1px 48px),
+      repeating-linear-gradient(90deg, rgba(217,119,6,0.035) 0 1px, transparent 1px 48px);
+    -webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,0.8), transparent 92%);
+    mask-image:linear-gradient(180deg, rgba(0,0,0,0.8), transparent 92%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative; z-index:1;}
+  .hero-eyebrow-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .hero-eyebrow-row .rule{
+    width:34px;height:2px;background:var(--accent-brass);
+  }
+  h1.name{
+    font-size:clamp(2.5rem,6.4vw,4.1rem);
+    line-height:1.1;
+    max-width:100%;
+  }
+  .role-target{
+    font-family:'Libre Caslon Text', serif;
+    font-style:italic;
+    font-weight:600;
+    color:var(--accent-blue-soft);
+    font-size:clamp(1.05rem,2.3vw,1.4rem);
+    margin-top:14px;
+    max-width:100%;
+  }
+  .hero-copy{
+    margin-top:22px;
+    max-width:100%;
+    font-size:1.05rem;
+    color:var(--body-text);
+  }
+  .hero-copy em{
+    font-family:'Spectral', serif;
+    font-style:italic;
+    font-weight:600;
+    color:var(--ink);
+    background:linear-gradient(transparent 62%, rgba(217,119,6,0.15) 62%);
+    padding:0 2px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr 300px;
+    gap:clamp(32px,5vw,64px);
+    align-items:start;
+  }
+  .hero-portrait{
+    width:100%;
+    max-width:320px;
+  }
+  .hero-portrait .frame{
+    position:relative;
+    background:var(--surface);
+    border:1px solid var(--line-strong);
+    padding:12px;
+    border-radius:var(--radius);
+    box-shadow:0 10px 20px -5px rgba(0, 0, 0, 0.08);
+  }
+  .hero-portrait img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:2px;
+  }
+  .hero-portrait .corner{
+    position:absolute;
+    width:20px;
+    height:20px;
+    pointer-events:none;
+  }
+  .hero-portrait .corner.tl{top:-7px;left:-7px;border-top:2px solid var(--accent-brass);border-left:2px solid var(--accent-brass);}
+  .hero-portrait .corner.tr{top:-7px;right:-7px;border-top:2px solid var(--accent-brass);border-right:2px solid var(--accent-brass);}
+  .hero-portrait .corner.bl{bottom:-7px;left:-7px;border-bottom:2px solid var(--accent-brass);border-left:2px solid var(--accent-brass);}
+  .hero-portrait .corner.br{bottom:-7px;right:-7px;border-bottom:2px solid var(--accent-brass);border-right:2px solid var(--accent-brass);}
+  .hero-portrait .caption{
+    margin-top:14px;
+    display:flex;
+    justify-content:space-between;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.64rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--muted);
+  }
+  @media (max-width:820px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-portrait{max-width:240px; margin:24px auto 0;}
+  }
+  .hero-actions{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    text-decoration:none;
+    border-radius:var(--radius);
+    border:1px solid transparent;
+    transition:transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary{
+    background:var(--accent-brass);
+    color:#ffffff;
+    box-shadow:0 4px 6px -1px rgba(217,119,6,0.25);
+  }
+  .btn-primary:hover{background:var(--accent-brass-deep); color:#ffffff; transform:translateY(-1px);}
+  .btn-ghost{
+    border-color:var(--line-strong);
+    color:var(--ink);
+    background:var(--surface);
+  }
+  .btn-ghost:hover{border-color:var(--accent-blue); color:var(--accent-blue); transform:translateY(-1px);}
+
+  /* ---------- STATS ---------- */
+  .stats-section{
+    padding:clamp(40px,6vw,56px) 0;
+    border-bottom:1px solid var(--line);
+  }
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:0 2px 4px rgba(0,0,0,0.03);
+  }
+  .stat{
+    background:var(--surface);
+    padding:24px 18px;
+    border-top:3px solid var(--accent-brass);
+  }
+  .stat .num{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(1.6rem,3vw,2.1rem);
+    color:var(--ink);
+    line-height:1;
+  }
+  .stat .lbl{
+    margin-top:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--muted);
+    line-height:1.4;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:clamp(56px,8vw,88px) 0;}
+  section.bordered{border-bottom:1px solid var(--line);}
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:18px;
+    margin-bottom:38px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-size:clamp(1.5rem,3vw,2rem);
+    color:var(--ink);
+  }
+  .section-head .rule-x{
+    flex:1;
+    height:1px;
+    background:var(--line);
+    min-width:40px;
+  }
+
+  .proof-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .proof-card{
+    background:var(--surface);
+    padding:26px 24px;
+    border-top:3px solid var(--accent-teal);
+  }
+  .proof-card .tag{
+    display:block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.64rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--accent-teal);
+    margin-bottom:12px;
+  }
+  .proof-card .num{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(1.5rem,2.8vw,2rem);
+    color:var(--ink);
+    line-height:1;
+  }
+  .proof-card .desc{
+    margin:10px 0 0;
+    font-size:0.88rem;
+    line-height:1.55;
+    color:var(--body-text);
+  }
+  .proof-card--wide{
+    grid-column:1 / -1;
+    border-top-color:var(--accent-brass);
+  }
+  .proof-split{
+    display:flex;
+    flex-wrap:wrap;
+    gap:36px;
+    margin-top:4px;
+  }
+  .proof-split-item{flex:1; min-width:180px;}
+  @media (max-width:820px){
+    .proof-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:560px){
+    .proof-grid{grid-template-columns:1fr;}
+  }
+
+  .lede{
+    max-width:100%;
+    font-size:1.05rem;
+    color:var(--body-text);
+  }
+  .profile-groups{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+  }
+  .profile-block .ptag{
+    display:block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    font-weight:700;
+    color:var(--accent-brass);
+    margin-bottom:10px;
+  }
+
+  /* Competency / skill groups */
+  .grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-top:8px;
+  }
+  .group{
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--line);
+    border-left: 4px solid #4f46e5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .group:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  .group h3{
+    font-size:0.95rem;
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    font-weight:700;
+    color:#1e1b4b;
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:2px solid rgba(79, 70, 229, 0.15);
+  }
+  .chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .chip{
+    font-size:0.85rem;
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:20px;
+    color:#312e81;
+    background:rgba(99, 102, 241, 0.1);
+    border:1px solid rgba(99, 102, 241, 0.25);
+    transition:all 0.15s ease;
+  }
+  .chip:hover{
+    background:#4f46e5;
+    color:#ffffff;
+    border-color:#4338ca;
+    transform:scale(1.03);
+  }
+  .chip.tech{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:#065f46;
+    background:rgba(16, 185, 129, 0.1);
+    border:1px solid rgba(16, 185, 129, 0.25);
+  }
+  .chip.tech:hover{
+    background:#059669;
+    color:#ffffff;
+    border-color:#047857;
+    transform:scale(1.03);
+  }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{
+    position:relative;
+    margin-top:8px;
+  }
+  .timeline::before{
+    content:'';
+    position:absolute;
+    left:8px;
+    top:8px;
+    bottom:8px;
+    width:2px;
+    background:var(--line-strong);
+  }
+  .timeline::after{
+    content:'';
+    position:absolute;
+    left:5px;
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--accent-brass);
+    box-shadow:0 0 0 4px rgba(217,119,6,0.2);
+    animation:pulse-travel 9s ease-in-out infinite;
+  }
+  @keyframes pulse-travel{
+    0%{top:0%;}
+    50%{top:96%;}
+    100%{top:0%;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .timeline::after{animation:none; top:0;}
+  }
+
+  .role{
+    position:relative;
+    padding-left:38px;
+    margin-bottom:38px;
+  }
+  .role:last-child{margin-bottom:0;}
+  .role .node{
+    position:absolute;
+    left:0;
+    top:6px;
+    border-radius:50%;
+    background:var(--paper);
+    border:3px solid var(--accent-blue);
+  }
+  .role.tier-1 .node{width:19px;height:19px;left:-1px;top:2px;border-color:var(--accent-brass);}
+  .role.tier-2 .node{width:16px;height:16px;top:5px;border-color:var(--accent-teal);}
+  .role.tier-3 .node{width:12px;height:12px;top:8px;left:2px;border-color:var(--line-strong);}
+  .role.tier-break .node{
+    width:12px;height:12px;top:8px;left:2px;
+    background:var(--paper);
+    border:2px dashed var(--line-strong);
+  }
+
+  .role-card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.04);
+  }
+  .role.tier-1 .role-card{border-left:4px solid var(--accent-brass);}
+  .role.tier-2 .role-card{border-left:4px solid var(--accent-teal);}
+  .role.tier-3 .role-card, .role.tier-break .role-card{border-left:4px solid var(--line-strong); padding:16px 20px;}
+
+  .role-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .role-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.12rem;
+    color:var(--ink);
+  }
+  .role.tier-3 .role-title, .role.tier-break .role-title{font-size:1rem;}
+  .role-company{
+    color:var(--accent-blue);
+    font-weight:600;
+  }
+  .role-meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    font-weight:600;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    white-space:nowrap;
+  }
+  .role-loc{
+    margin-top:2px;
+    font-size:0.82rem;
+    color:var(--muted);
+  }
+  .case{
+    margin-top:14px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .case .field{
+    display:grid;
+    grid-template-columns:92px 1fr;
+    gap:14px;
+  }
+  .case .field .k{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.65rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    font-weight:700;
+    color:var(--accent-brass-deep);
+    padding-top:2px;
+  }
+  .case .field .v{
+    font-size:0.93rem;
+    line-height:1.55;
+    color:var(--body-text);
+  }
+  .case .field.impact .k{color:var(--accent-teal);}
+  .case .field.impact .v{color:var(--ink); font-weight:500;}
+  .case .field .v strong{color:var(--ink); font-weight:600;}
+  .case-list{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .case-list li{
+    position:relative;
+    padding-left:16px;
+    font-size:0.93rem;
+    line-height:1.55;
+    color:var(--body-text);
+  }
+  .case-list li::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:9px;
+    width:6px;
+    height:6px;
+    background:var(--accent-brass);
+    border-radius:1px;
+  }
+  .role.tier-3 .case .field{grid-template-columns:80px 1fr;}
+  .role.tier-3 .case .v{font-size:0.88rem;}
+  @media (max-width:600px){
+    .case .field{grid-template-columns:1fr; gap:4px;}
+  }
+  .role.tier-break p{
+    margin:8px 0 0;
+    font-style:italic;
+    color:var(--muted);
+    font-size:0.92rem;
+  }
+
+  /* ---------- CERTS / PATENTS ---------- */
+  .cards-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 26px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.03);
+  }
+  .card h3{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    font-size:0.85rem;
+    letter-spacing:0.08em;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:16px;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--line);
+  }
+  .card ul{margin:0; padding-left:18px;}
+  .card li{margin-bottom:10px; font-size:0.94rem;}
+  .card li:last-child{margin-bottom:0;}
+  .tag-patent{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.62rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--accent-brass-deep);
+    background:rgba(217,119,6,0.12);
+    border:1px solid rgba(217,119,6,0.3);
+    padding:2px 7px;
+    border-radius:3px;
+    margin-right:8px;
+    vertical-align:middle;
+  }
+
+  .edu-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:16px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-left:4px solid var(--accent-brass);
+    border-radius:var(--radius);
+    padding:24px 26px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.03);
+  }
+  .edu-card .degree{font-family:'Fraunces', serif; font-weight:600; font-size:1.1rem; color:var(--ink);}
+  .edu-card .school{color:var(--accent-blue); font-weight:600; margin-top:4px;}
+  .edu-card .gpa{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    font-weight:600;
+    color:var(--muted);
+    text-align:right;
+  }
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{
+    background:#0f172a;
+    color:#f8fafc;
+    padding:clamp(56px,8vw,84px) 0 40px;
+    border-top:1px solid var(--line);
+  }
+  footer .eyebrow{color:#2dd4bf;}
+  footer h2{color:#ffffff; font-size:clamp(1.5rem,3vw,2.2rem); max-width:100%; text-wrap:pretty;}
+  footer p.lede2{
+    max-width:100%;
+    color:#cbd5e1;
+    margin-top:16px;
+    font-size:1.02rem;
+  }
+  .contact-grid{
+    margin-top:36px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:#334155;
+    border:1px solid #334155;
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .contact-grid .cell{
+    background:#1e293b;
+    padding:18px 20px;
+  }
+  .contact-grid .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.62rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:#94a3b8;
+    margin-bottom:8px;
+    display:block;
+  }
+  .contact-grid .val, .contact-grid .val a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.88rem;
+    color:#f8fafc;
+    text-decoration:none;
+  }
+  .contact-grid .val a:hover{color:#38bdf8;}
+  footer .foot-actions{
+    margin-top:32px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  footer .btn-primary{
+    background:#f59e0b;
+    color:#0f172a;
+  }
+  footer .btn-primary:hover{
+    background:#d97706;
+    color:#ffffff;
+  }
+  footer .btn-ghost{
+    background:transparent;
+    border-color:#475569;
+    color:#f8fafc;
+  }
+  footer .btn-ghost:hover{border-color:#38bdf8; color:#38bdf8;}
+  .fine-print{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid #334155;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color:#94a3b8;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(14px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in-view{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none;}
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:820px){
+    .grid-2{grid-template-columns:1fr;}
+    .stats-grid{grid-template-columns:repeat(2,1fr);}
+    .stat:nth-child(1){border-top-color:var(--accent-brass);}
+    .cards-2{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:repeat(2,1fr);}
+    .role-top{flex-direction:column; gap:2px;}
+  }
+  @media (max-width:520px){
+    .stats-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-mark">RAVI<span>·</span>VANGALA</div>
+    <nav class="nav-links">
+      <a href="#profile">Profile</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#competencies">Leadership</a>
+      <a href="#skills">Technical</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-eyebrow-row">
+          <div class="rule"></div>
+          <span class="eyebrow">Technology Executive · Hyderabad, India</span>
+        </div>
+        <h1 class="name">Ravi P Vangala</h1>
+        <p class="role-target">Enterprise &amp; AI-Led Technology Leadership</p>
+        <p class="hero-copy"><em>Executive strategy. Architectural rigor. Hands-on delivery.</em>
+         Technology leadership that links enterprise business objectives directly to the code that powers them. Built on 26 years of leading global delivery teams from the front —from legacy enterprise integrations to Generative AI—by keeping leadership deeply technical, strategic, and accountable to business impact.</p>
+      </div>
+      <div class="hero-portrait">
+        <div class="frame">
+          <div class="corner tl"></div>
+          <div class="corner tr"></div>
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
+          <img src="ravi-photo.jpg" alt="Ravi P Vangala">
+        </div>
+        <div class="caption">
+          <span>Ravi P Vangala</span>
+          <span>Hyderabad, IN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="num">26+</div>
+        <div class="lbl">Years in Enterprise Technology</div>
+      </div>
+      <div class="stat">
+        <div class="num">$15.6M</div>
+        <div class="lbl">New Revenue Generated (Virtusa, 8 POC→Project Conversions)</div>
+      </div>
+      <div class="stat">
+        <div class="num">97%+</div>
+        <div class="lbl">Sustained Client CSAT, 3 Consecutive Years</div>
+      </div>
+      <div class="stat">
+        <div class="num">74%</div>
+        <div class="lbl">RFP Win Rate — 17 of 23 Over 3 Years</div>
+      </div>
+      <div class="stat">
+        <div class="num">69%+</div>
+        <div class="lbl">Profit Margin Sustained Across 16 Concurrent Projects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Profile</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="profile-groups">
+      <div class="profile-block">
+        <span class="ptag">Measurable Value &amp; Track Record</span>
+        <p class="lede">Enterprise value, as demonstrated across 26 years of delivery, is measured by outcomes boardrooms can bank on: $15.6M in revenue generated from POC conversions, a 74% RFP win rate sustained over three years, 97%+ client satisfaction across 16 concurrent engagements, and a 0.0003% failure rate on mission-critical healthcare systems processing millions of monthly transactions. Innovation is validated by results—including a provisional U.S. patent for an agentic AI healthcare rating framework.</p>
+      </div>
+      <div class="profile-block">
+        <span class="ptag">Strategic Execution &amp; Global Scale</span>
+        <p class="lede">Delivering predictable, repeatable outcomes across global teams (US, Middle East, India) relies on governance. By establishing rigorous Architecture Review Boards, standardized engineering metrics, and disciplined KPI cadences, complex technical operations scale seamlessly. Moving from hands-on EDI and data architecture to modern Generative and Agentic AI ensures leadership remains grounded in active code, architectural depth, and operational reality.</p>
+      </div>
+      <div class="profile-block">
+        <span class="ptag">Strategic Mandate &amp; Vision</span>
+        <p class="lede">The next objective is driving technology leadership at scale in a Senior Leadership Role — specifically within IT Product, Healthcare, or Life Sciences enterprises. The goal is to build organizations where the bridge between business strategy, Enterprise Architecture, and hands-on engineering is tightly integrated, and where technical fluency at the executive table is leveraged as a distinct competitive advantage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="delivery" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Delivery Track Record</h2>
+      <div class="rule-x"></div>
+    </div>
+    <p class="lede" style="margin-bottom:32px;">Snapshot of Achievements as a Delivery Leader</p>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <span class="tag">Virtusa · AWS CoE</span>
+        <div class="num">16</div>
+        <p class="desc">Concurrent projects led simultaneously across ML, Gen AI, and data engineering — without a drop in delivery quality.</p>
+      </div>
+      <div class="proof-card">
+        <span class="tag">Blue Shield of California</span>
+        <div class="num">0.0003%</div>
+        <p class="desc">Planned failure rate held across 4–5 million real-time HIPAA transactions a month on a brand-new microservices architecture.</p>
+      </div>
+      <div class="proof-card">
+        <span class="tag">Blue Shield of California</span>
+        <div class="num">156</div>
+        <p class="desc">Production and non-production servers migrated across three private datacenters with zero service disruption.</p>
+      </div>
+      <div class="proof-card">
+        <span class="tag">Mphasis · Blue Shield</span>
+        <div class="num">8 Months</div>
+        <p class="desc">Full HIPAA X12 4010→5010 migration and platform replacement, delivered inside the original SOW window.</p>
+      </div>
+      <div class="proof-card">
+        <span class="tag">CitiusTech</span>
+        <div class="num">Zero-Downtime</div>
+        <p class="desc">Legacy database modernization to Snowflake for major clients, with no disruption to production operations.</p>
+      </div>
+      <div class="proof-card">
+        <span class="tag">Virtusa</span>
+        <div class="num">$1.4M</div>
+        <p class="desc">A potential lawsuit turned into a new revenue relationship through hands-on service recovery and rebuilt trust.</p>
+      </div>
+      <div class="proof-card proof-card--wide">
+        <span class="tag">Trianz · Concierto Modernize</span>
+        <div class="proof-split">
+          <div class="proof-split-item">
+            <div class="num">80%+</div>
+            <p class="desc">Cut off actual legacy migration delivery time, engagement over engagement.</p>
+          </div>
+          <div class="proof-split-item">
+            <div class="num">85%+</div>
+            <p class="desc">Reduction in the team size required to run a migration.</p>
+          </div>
+          <div class="proof-split-item">
+            <div class="num">96%+</div>
+            <p class="desc">Overall cost savings delivered to customers versus a manual migration.</p>
+          </div>
+        </div>
+        <p class="desc" style="margin-top:14px;">Every engagement still ships a complete, updated set of current-state and target-state documentation — automation replaced effort, not rigor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Credentials &amp; IP</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="cards-2">
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li><a href="https://www.credly.com/badges/9163b765-b91f-4dd8-871f-e973121fddf3/" target="_blank" rel="noopener">TOGAF ↗</a></li>
+          <li>Multiple AWS &amp; Google Cloud trainings</li>
+          <li>Go Language, Terraform &amp; UiPath RPA certifications</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Patents &amp; Publications</h3>
+        <ul>
+          <li><span class="tag-patent">Patent Awarded</span>Provisional U.S. patent — Health Care Rating Improvement System using Generative &amp; Agentic AI</li>
+          <li><span class="tag-patent">In Progress</span>Patent application — Concierto Modernize application, Trianz</li>
+          <li>Article: <a href="https://aws.amazon.com/blogs/apn/demystifying-natural-language-processing-and-machine-learning-with-amazon-comprehend/" target="_blank" rel="noopener">Demystifying Natural Language Processing and Machine Learning with AWS Comprehend ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/designing-training-custom-llms-ravi-vangala-zgrhf/" target="_blank" rel="noopener">Designing and Training Custom LLMs ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/discovering-world-large-language-models-ravi-vangala-yxopf/" target="_blank" rel="noopener">Discovering the World of Large Language Models ↗</a></li>
+          <li>Article: <a href="https://www.linkedin.com/pulse/designing-guardrail-glm-52-architecture-llm-steering-concepts-ravi-sp9yf/" target="_blank" rel="noopener">Designing a Custom LLM Guardrail Layer Using LLM Steering Concepts ↗</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competencies" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Leadership &amp; Core Competencies</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="grid-2">
+      <div class="group">
+        <h3>Strategy &amp; Delivery</h3>
+        <div class="chips">
+          <span class="chip">Strategic Program Management</span>
+          <span class="chip">Delivery Management</span>
+          <span class="chip">Digital Transformation</span>
+          <span class="chip">Agile &amp; Scrum Methodologies</span>
+          <span class="chip">Risk Mitigation</span>
+          <span class="chip">Change Management</span>
+        </div>
+      </div>
+      <div class="group">
+        <h3>Architecture &amp; Growth</h3>
+        <div class="chips">
+          <span class="chip">Enterprise &amp; Solution Architecture</span>
+          <span class="chip">Pre-Sales &amp; Client Engagement</span>
+          <span class="chip">Business Process Optimization</span>
+          <span class="chip">Cross-Functional Tech Leadership</span>
+        </div>
+      </div>
+      <div class="group">
+        <h3>Financial Management</h3>
+        <div class="chips">
+          <span class="chip">P&amp;L / Budget Management</span>
+          <span class="chip">Financial Planning &amp; Cost Optimization</span>
+          <span class="chip">Revenue Growth &amp; Profitability</span>
+        </div>
+      </div>
+      <div class="group">
+        <h3>People &amp; Governance</h3>
+        <div class="chips">
+          <span class="chip">Stakeholder Engagement</span>
+          <span class="chip">Team Mentorship, Multi-Geography</span>
+          <span class="chip">Architecture Review Boards / EA Governance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Technical Fluency</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="grid-2">
+      <div class="group" style="border-left-color: #059669;">
+        <h3 style="color: #064e3b; border-bottom-color: rgba(5, 150, 105, 0.2);">Generative &amp; Agentic AI</h3>
+        <div class="chips">
+          <span class="chip tech">RAG</span>
+          <span class="chip tech">LLM Fine-Tuning</span>
+          <span class="chip tech">Open-Source LLM Hosting</span>
+          <span class="chip tech">Custom LLM Guardrails</span>
+          <span class="chip tech">Machine Learning</span>
+        </div>
+      </div>
+      <div class="group" style="border-left-color: #059669;">
+        <h3 style="color: #064e3b; border-bottom-color: rgba(5, 150, 105, 0.2);">Cloud &amp; Infrastructure</h3>
+        <div class="chips">
+          <span class="chip tech">AWS</span>
+          <span class="chip tech">Azure</span>
+          <span class="chip tech">Google Cloud</span>
+          <span class="chip tech">Private Cloud</span>
+          <span class="chip tech">Terraform</span>
+        </div>
+      </div>
+      <div class="group" style="border-left-color: #059669;">
+        <h3 style="color: #064e3b; border-bottom-color: rgba(5, 150, 105, 0.2);">Data Engineering</h3>
+        <div class="chips">
+          <span class="chip tech">Snowflake</span>
+          <span class="chip tech">Kafka</span>
+          <span class="chip tech">AWS Glue</span>
+          <span class="chip tech">Athena</span>
+          <span class="chip tech">Denodo</span>
+          <span class="chip tech">Graph &amp; Vector DBs</span>
+          <span class="chip tech">SQL / NoSQL</span>
+        </div>
+      </div>
+      <div class="group" style="border-left-color: #059669;">
+        <h3 style="color: #064e3b; border-bottom-color: rgba(5, 150, 105, 0.2);">Integration &amp; Platforms</h3>
+        <div class="chips">
+          <span class="chip tech">WebSphere Message Broker</span>
+          <span class="chip tech">Edifecs</span>
+          <span class="chip tech">TIBCO ESB</span>
+          <span class="chip tech">HIPAA X12 EDI</span>
+          <span class="chip tech">Spring Boot / Microservices</span>
+          <span class="chip tech">Salesforce</span>
+          <span class="chip tech">UiPath RPA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Career Timeline</h2>
+      <div class="rule-x"></div>
+    </div>
+    <p class="lede" style="margin-bottom:36px;">Twenty-six years across nine U.S. states, the Middle East, and India.</p>
+
+    <div class="timeline">
+
+      <div class="role tier-1">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">AI Solutions Architect <span class="role-company">— Trianz</span></div>
+            <div class="role-meta">Dec 2024 – Present · Hyderabad</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Legacy modernization at Trianz's clients was slow and manual — no current-state documentation to work from, no fast way to plan an upgrade path, and testing built from scratch every time.</span></div>
+            <div class="field"><span class="k">Approach</span><div class="v">
+              <p style="margin:0 0 10px;">Led the team that built <strong>Concierto Modernize</strong> — an Agentic AI product covering the full modernization lifecycle:</p>
+              <ul class="case-list">
+                <li><strong>Documentation Studio</strong> — generates end-to-end current-state documentation straight from the codebase: business and technical architecture, business and technical overviews, the BRD, and detailed code-level documentation.</li>
+                <li><strong>Transformation Studio</strong> — gives clients a choice of paths: upgrade the legacy code version, containerize the application, or make it cloud-ready, applying custom rules and security fixes along the way.</li>
+                <li><strong>Testing Studio</strong> — takes the BRD as input and generates Epics, Features, and User Stories, then derives Test Cases and Test Scripts across multiple testing frameworks and validates them automatically.</li>
+                <li><strong>Database Migration</strong> — AI-driven migration from Oracle to Postgres and SQL Server to Postgres, with full database documentation including ER diagrams generated end-to-end.</li>
+              </ul>
+            </div></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Cut actual legacy migration delivery time by more than 80% and the team size required by more than 85%, for an overall cost saving of 96%+ — while still delivering a complete, updated set of current-state and target-state documentation with every engagement. Concierto Modernize is now running live for multiple clients, and I'm currently leading data preparation and fine-tuning for its custom LLM.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-1">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Enterprise Architect <span class="role-company">— MatrixConsultants.ai</span></div>
+            <div class="role-meta">Jul 2024 – Dec 2024 · Hyderabad</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Health Information Exchanges lacked a way to flag chronic-condition patients (cardiovascular, diabetes, hypertension) at risk of readmission early enough to intervene.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Led architecture, design, and pre-sales for a Generative AI product predicting readmission probability and surfacing preventive guidance; piloted and customized it with two Health Insurance Exchanges.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered a live Gen AI pilot at two exchanges, giving them actionable intelligence to improve patient outcomes and HEDIS ratings.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-1">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Enterprise Architect <span class="role-company">— SID Global </span></div>
+            <div class="role-meta">Apr 2024 – Jul 2024 · Hyderabad</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">One of the largest banks in Bahrain needed a clear, validated picture of its application, data, security, and infrastructure landscape before committing to a digital transformation and AWS migration.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Led a team of architects through full-landscape discovery, then produced a detailed transformation roadmap and AWS migration recommendations; led multiple RFP and pre-sales efforts across APAC.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered a validated transformation roadmap for the bank and contributed directly to new business generation for SID Global across APAC.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-break">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Family Caregiving</div>
+            <div class="role-meta">Oct 2023 – Apr 2024 · Hyderabad</div>
+          </div>
+          <p>Took time off to care for elders in the family.</p>
+        </div>
+      </div>
+
+      <div class="role tier-1">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Senior Director, Health Care &amp; Life Sciences <span class="role-company">— Virtusa</span></div>
+            <div class="role-meta">Jun 2021 – Oct 2023 · Tampa, FL</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Virtusa's Healthcare &amp; Life Sciences unit needed to convert AI/ML proof-of-concepts into durable revenue while holding delivery quality across a fast-growing, distributed project portfolio.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Led the AWS Center of Excellence, directing 16 concurrent projects across ML, Gen AI, Neptune, Airflow, and AWS Glue; implemented architectural governance and coding standards; converted POCs into long-term engagements and personally led RFP responses.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Generated $15.6M in new revenue from 8 POC conversions, sustained 97.8%+ CSAT and 69%+ margins across all 16 projects for three straight years, delivered a 73.9% RFP win rate (17/23), turned a lawsuit risk into $1.4M in new revenue, and helped Virtusa win AWS Global Partner of the Year in Data Analytics, 2022.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-2">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Consultant Enterprise Architect <span class="role-company">— CitiusTech</span></div>
+            <div class="role-meta">Oct 2020 – May 2021 · Hyderabad</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Multiple clients were running on legacy databases and fragmented integration patterns that couldn't support modern data and event-driven workloads.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Delivered enterprise architecture roadmaps implementing Kafka, Snowflake, Denodo, and Matillion; led legacy database modernization; implemented Domain-Driven Design and Event-Driven Architecture; built a data lake and HIPAA X12 integrations via Edifecs/WebSphere into Facets.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Modernized core data infrastructure for major clients with near-zero downtime, and authored the RFPs and proposals that helped win the work.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-2">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Enterprise Solutions Architect <span class="role-company">— HCL Global </span></div>
+            <div class="role-meta">Jun 2019 – Sep 2020 · New York, NY</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">One of the major entertainment companies in USA needed to secure satellite signal encryption for factory partners while migrating off an aging SOA/TIBCO ESB architecture ahead of its merger with another major player in the entertainment industry, with technology debt rising.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Reviewed signal-encryption security architecture with the security team, architected the move to microservices in Go, Python, and Spring Boot on AWS, mentored the team on canary deployments, and designed automated 90-day AWS key rotation.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered a modernized, more secure microservices platform positioned for the company merger, with automated key rotation and canary deployments embedded in the release process.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-2">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Enterprise Solutions Architect <span class="role-company">— DOT COM Team </span></div>
+            <div class="role-meta">May 2017 – May 2019 · Jacksonville, FL</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">One of the Largest Health Care Payer  in Florida had claims,  pharmacy and provider data was fragmented across legacy SOA/microservices integrations, limiting real-time visibility and enterprise-wide data ingestion.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Architected the migration to event-driven architecture using a Kafka event bus and data lake ingestion framework; designed the Care 360 Portal (Angular, Node, React; 56 REST APIs); built EMR ingestion integrations with EPIC and CERNER via Edifecs.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered enterprise-wide data lake ingestion and multi-tenancy, a new pharmacy-facing portal, and measurable medical-adherence metrics for GuideWell's consumer health programs.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-2">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Technical Leader <span class="role-company">— Blue Shield of California</span></div>
+            <div class="role-meta">Jan 2014 – Apr 2017 · San Francisco, CA</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Blue Shield's real-time HIPAA X12 transaction volume — 4–5 million monthly — ran on legacy infrastructure with no microservices architecture and an aging, multi-datacenter footprint.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Implemented Blue Shield's first microservices architecture, integrated Edifecs/WebSphere Message Broker with the Facets backend, and led three private datacenter migrations covering 156 production and non-production servers.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Held a 0.0003% planned failure rate across 4–5 million monthly real-time transactions (EDI 270/271, 276/277, 278) and completed all datacenter migrations without disruption.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-3">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Technical Project Manager <span class="role-company">— Mphasis </span></div>
+            <div class="role-meta">Aug 2008 – Dec 2013 · Chennai &amp; San Francisco</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">The customer a major Health Care Payer in California needed all HIPAA X12 4010 transactions migrated to 5010 and its aging Seebeyond eGate platform replaced within a tight SOW window, without disrupting EDI operations.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Managed the full EDI operations and development team, led the migration from Seebeyond eGate to Edifecs and IBM WebSphere Message Broker, and delivered ICD-10, NPI reject, and Facets 5010 carry-over projects.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Completed the full 4010-to-5010 migration and platform replacement within 8 months of SOW, with continuous EDI operations throughout.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-3">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Project Lead <span class="role-company">— Satyam Computers </span></div>
+            <div class="role-meta">Oct 2008 – Aug 2009 · Baton Rouge, LA</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">The Customer needed HIPAA X12 276/277 and 837 Professional claims integrated into Facets, coordinated across multiple business and technical stakeholder groups.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Implemented the HIPAA X12 transactions in Seebeyond eGate and coordinated requirements gathering across business and stakeholder teams.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered compliant, production-ready claims integration into the Facets platform.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-3">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Project Lead <span class="role-company">— Infospan Technologies </span></div>
+            <div class="role-meta">Oct 2006 – Oct 2008 · Baton Rouge, LA</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">The customer a major Health Care Payer in Louisiana needed several HIPAA X12 transaction types integrated into Facets, with requirements still being defined across business teams.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Led the team through requirements gathering, design, and implementation of multiple HIPAA X12 transactions into the Facets integration.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered multiple production HIPAA X12 integrations that became the foundation for BCBS Louisiana's claims processing.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-3">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">eGate Developer <span class="role-company">— Technation Consulting </span></div>
+            <div class="role-meta">Sep 2005 – Oct 2006 · Minneapolis, MN</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">One of the largest Health Care Payers in USA needed HIPAA X12 837 Professional and Institutional claims processed through Seebeyond eGate, with requirements not yet fully defined.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Gathered business and technical requirements and built the eGate implementation for 837 Professional and Institutional claims.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Delivered a working claims-processing integration for United Health Group.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role tier-3">
+        <div class="node"></div>
+        <div class="role-card">
+          <div class="role-top">
+            <div class="role-title">Java / J2EE Developer <span class="role-company">— Sara Software</span></div>
+            <div class="role-meta">Mar 1998 – Nov 2002 · Hyderabad</div>
+          </div>
+          <div class="case">
+            <div class="field"><span class="k">Problem</span><span class="v">Sara Software's clients needed custom Java/J2EE applications built and delivered against varied business requirements.</span></div>
+            <div class="field"><span class="k">Approach</span><span class="v">Designed, developed, and delivered Java/J2EE applications across multiple client engagements.</span></div>
+            <div class="field impact"><span class="k">Impact</span><span class="v">Built the hands-on engineering foundation that carried through 26 years of architecture and technology leadership.</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Education</h2>
+      <div class="rule-x"></div>
+    </div>
+    <div class="edu-card">
+      <div>
+        <div class="degree">Master's in Computer Science</div>
+        <div class="school">Southern University and A&amp;M College, Baton Rouge, Louisiana</div>
+      </div>
+      <div class="gpa">3.94 / 4.0 GPA<br>2003 – 2004</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Let's talk</span>
+    <h2 style="margin-top:14px;">Looking for a technology leader who's still willing to open the Architecture Diagrams or the Code Repositories?</h2>
+    <p class="lede2">Seeking a long-term Enterprise &amp; AI-Led Technology Leadership — ideally with an IT product, healthcare, or pharmaceutical organization in or around Hyderabad — where I can keep building the bridge between the executive suite and the engineering floor.</p>
+
+    <div class="contact-grid">
+      <div class="cell">
+        <span class="label">Phone</span>
+        <span class="val"><a href="tel:+919392742499">+91 93927 42499</a></span>
+      </div>
+      <div class="cell">
+        <span class="label">Email</span>
+        <span class="val"><a href="mailto:ravipvangala@gmail.com">ravipvangala@gmail.com</a></span>
+      </div>
+      <div class="cell">
+        <span class="label">LinkedIn</span>
+        <span class="val"><a href="https://www.linkedin.com/in/ravi-vangala/" target="_blank" rel="noopener">Ravi Vangala ↗</a></span>
+      </div>
+      <div class="cell">
+        <span class="label">Location</span>
+        <span class="val">Madhapur, Hyderabad</span>
+      </div>
+    </div>
+
+    <div class="foot-actions">
+      <a class="btn btn-primary" href="Ravi_Vangala_Resume.pdf" download>Download Full Résumé</a>
+      <a class="btn btn-ghost" href="mailto:ravipvangala@gmail.com" onclick="copyEmail(this)">Send an Email</a>
+    </div>
+
+    <div class="fine-print">
+      <span>© 2026 Ravi Prasad Vangala</span>
+      <span>ravipvangala.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function copyEmail(el){
+    const email = 'ravipvangala@gmail.com';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(() => {
+        const original = el.textContent;
+        el.textContent = 'Copied — ' + email;
+        setTimeout(() => { el.textContent = original; }, 2200);
+      }).catch(() => {});
+    }
+  }
+
+  if ('IntersectionObserver' in window) {
+    const items = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    items.forEach(item => io.observe(item));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in-view'));
+  }
+</script>
+
+</body>
+</html>
